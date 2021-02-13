@@ -11,11 +11,28 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarManager carManager = new CarManager(new EfCar());
-            CarTest(carManager);
+            //CarTest(carManager);
 
             //BrandTest();
 
             //ColorTest();
+
+            UserManager userManager = new UserManager(new EfUser());
+
+            userManager.Add(new User { FirstName = "Cem", LastName = "Gökdel", Email = "1234@gmai.com", Password = "12345" });
+
+            userManager.Add(new User { FirstName = "Can", LastName = "Korkmaz", Email = "ck@gmail.com", Password = "12345" });
+
+            userManager.Add(new User { FirstName = "Efe", LastName = "Chen", Email = "e.chen@gmail.com", Password = "1234" });
+
+            var result = userManager.GetAll();
+            if(result.Success == true)
+            {
+                foreach (var user in result.Data)
+                {
+                    Console.WriteLine(user.FirstName + user.LastName);
+                }
+            }
         }
 
         private static void ColorTest()
