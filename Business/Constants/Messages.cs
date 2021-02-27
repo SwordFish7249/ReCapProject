@@ -17,5 +17,10 @@ namespace Business.Constants
         public static string PersonsListed = "Persons are listing.";
         public static string RentalSuccess = "Your rental is successful.";
         public static string RentalError = "The system is not has a return date car. So you don't rent a car.";
+        public static string CarImageSızePassing = "Every car just has a 5 images.Another mean you just adding 5 images per car not much.";
+        public static string CarImageAdding = "The car image is adding.";
+        public static string CarImageDeleted = "The car image deleted.";
+        public static string CarImagesListed = "Car images are listing.";
+        public static string CarImageUpdated = "Car image is updated.";
     }
 }
