@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -26,10 +27,10 @@ namespace Business.Concrete
             if (user.FirstName.Length > 2)
             {
                 _userdal.Add(user);
-                
+
                 return new SuccessResult(Messages.PersonAdded);
             }
-            else 
+            else
             {
                 return new ErrorResult(Messages.PersonNameInvalid);
             }
@@ -53,6 +54,16 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userdal.GetAll(), Messages.PersonsListed);
         }
 
+        public User GetByMail(string email)
+        {
+            return _userdal.Get(u => u.Email == email);
+        }
+
+        public List<OperationClaim> GetClaims(User user)
+        {
+            return _userdal.GetClaims(user);
+        }
+
         public IDataResult<List<User>> GetUsersById(int id)
         {
              return new SuccessDataResult<List<User>>(_userdal.GetAll(u => u.Id == id));
@@ -63,5 +74,7 @@ namespace Business.Concrete
             _userdal.Update(user);
             return new SuccessResult(Messages.PersonUpdated);
         }
+
+        
     }
 }

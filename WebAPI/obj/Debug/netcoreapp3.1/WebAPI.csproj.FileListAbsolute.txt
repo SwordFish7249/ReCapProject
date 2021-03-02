@@ -73,3 +73,4 @@ C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
