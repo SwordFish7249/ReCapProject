@@ -15,5 +15,6 @@ namespace Business.Abstract
         IResult Add(IFormFile formFile, int carId);
         IResult Update(IFormFile formFile, CarImage carImage);
         IResult Delete(CarImage carImage);
+        IResult AddTransactionalTest(CarImage carImage);
     }
 }

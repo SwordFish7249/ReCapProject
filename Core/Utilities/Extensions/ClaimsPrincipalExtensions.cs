@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Core.Extensions
 {
-    public static class ClaimsPrincipleExtensions
+    public static class ClaimsPrincipalExtensions
     {
         public static void AddEmail(this ICollection<Claim> claims, string email)
         {
