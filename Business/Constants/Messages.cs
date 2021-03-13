@@ -31,5 +31,14 @@ namespace Business.Constants
         public static string SuccessfulLogin = "You are login sucessfully.";
         public static string UserAlreadyExists = "User was already exists.";
         public static string AccessTokenCreated = "Your token was created successfull.";
+        public static string BrandAdded = "Brand was adding.";
+        public static string BrandIsDeleted = "Brand was deleting.";
+        public static string BrandsListed = "Brands are listing.";
+        public static string BrandUpdated = "Brand was update.";
+        public static string ColorAdded = "Color was adding.";
+        public static string ColorDeleted = "Color was deleting.";
+        public static string ColorsListed = "Colors are listing.";
+        public static string ColorUpdated = "Color was update.";
+        public static string RentalsListed = "Rentals are listing.";
     }
 }
