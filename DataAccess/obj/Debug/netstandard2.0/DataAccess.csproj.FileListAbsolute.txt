@@ -1,7 +1,3 @@
-C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
-C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
-C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
-C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
@@ -9,6 +5,10 @@ C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstan
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Core.pdb
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

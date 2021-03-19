@@ -9,57 +9,61 @@ namespace Core.Utilities.FileHelper
 {
     public class FileHelper
     {
-        public static string Add(IFormFile file)
+        private static string fullPath = Path.Combine(Environment.CurrentDirectory, "wwwroot");
+        /// <summary>
+        /// Delete File
+        /// </summary>
+        /// <param name="filePath">The path to the file to be deleted.
+        /// Example: folderName/file.png
+        /// Example: folderName/subFolderName1/subFolderName2/[unlimited]/file.png
+        /// </param>
+        /// <returns></returns>
+        /// <exception cref="ExternalException"></exception>
+        public static IResult Delete(string filePath)
         {
-            var sourcepath = Path.GetTempFileName();
-            if (file.Length > 0)
-                using (var stream = new FileStream(sourcepath, FileMode.Create))
-                    file.CopyTo(stream);
-            
-            var result = newPath(file);
-            File.Move(sourcepath, result);
-            return result;
+            File.Delete(Path.Combine(fullPath, filePath));
+            return new SuccessResult();
         }
-
-        public static string Update(string sourcePath, IFormFile file)
+        /// <summary>
+        /// Upload file
+        /// </summary>
+        /// <param name="directoryPath">The folder to be saved.
+        /// Example: folderName
+        ///Example: folderName/subFolderName1/subFolderName2/.... [unlimeted]
+        /// </param>
+        /// <param name="file">IFromFile</param>
+        /// <returns>
+        /// IDataResult.Data => The path to the uploaded file.
+        /// IDataResult.Success => Registration status (True or False)
+        /// IDataResult.Message => Returning message
+        /// </returns>
+        public static IDataResult<string> Upload(string directoryPath, IFormFile file)
         {
-            var result = newPath(file);
-            if (sourcePath.Length>0)
+            FolderControl(directoryPath);
+            if (file != null && file.Length > 0)
             {
-                using (var stream = new FileStream(result, FileMode.Create))
+                string fileName = Guid.NewGuid().ToString("D") + Path.GetExtension(file.FileName).ToLower();
+                var filePath = Path.Combine(fullPath, directoryPath, fileName);
+                using (var stream = File.Create(filePath))
                 {
                     file.CopyTo(stream);
+                    stream.Flush();
                 }
-            }
-            File.Delete(sourcePath);
 
-            return result;
+                return new SuccessDataResult<string>(data: Path.Combine(directoryPath, fileName));
+            }
+            return new ErrorDataResult<string>();
         }
-
-        public static IResult Delete(string path)
+        /// <summary>
+        /// FolderControl
+        /// </summary>
+        /// <param name="directoryPath">example 1: foldername <br></br> example 2: foldername/subfoldername/.... [unlimited]</param>
+        private static void FolderControl(string directoryPath)
         {
-            try
+            if (!Directory.Exists(Path.Combine(fullPath, directoryPath)))
             {
-                File.Delete(path);
+                Directory.CreateDirectory(Path.Combine(fullPath, directoryPath));
             }
-            catch (Exception exception)
-            {
-
-                return new ErrorResult(exception.Message);
-            }
-            return new SuccessResult();
-        } 
-
-        public static string newPath(IFormFile file)
-        {
-            System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.FileName);
-            string fileExtension = fileInfo.Extension;
-            var creatingUniqueFileName = Guid.NewGuid().ToString("N")
-                + "_" + DateTime.Now.Month + "_" + DateTime.Now.Day
-                + "_" + DateTime.Now.Year + fileExtension;
-            string path = Environment.CurrentDirectory + @"/wwwroot/UploadCarImages";
-            string result = $@"{path}\{creatingUniqueFileName}";
-            return result;
         }
     }
 }

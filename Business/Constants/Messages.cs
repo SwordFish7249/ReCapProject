@@ -1,4 +1,5 @@
 ﻿using Core.Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
@@ -40,5 +41,23 @@ namespace Business.Constants
         public static string ColorsListed = "Colors are listing.";
         public static string ColorUpdated = "Color was update.";
         public static string RentalsListed = "Rentals are listing.";
+
+        //yeni eklenenler
+
+        //CarImage
+
+        public static string AddCarImageMessage = "Araç resmi başarıyla eklendi";
+        public static string EditCarImageMessage = "Araç resmi başarıyla güncellendi";
+        public static string DeleteCarImageMessage = "Araç resmi başarıyla silindi";
+        public static string AboveImageAddingLimit = "Araç maksimum resim sayısına ulaştı. Resim ekleyemezsiniz";
+        public static string IncorrectFileExtension = "Kabul edilmeyen dosya uzantısı";
+        public static string ImageNotFound = "Resim dosyası bulunamadı.";
+        public static string CarImageNotFound = "Değiştirilmek istenen resim bulunamadı.";
+
+
+        internal static string CarDeleted;
+        internal static string CarUpdated;
+        internal static CarDetailAndImagesDto GetErrorCarMessage;
+        internal static string GetSuccessCarMessage;
     }
 }

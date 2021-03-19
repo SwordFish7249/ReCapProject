@@ -10,7 +10,7 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EfCar());
+            //CarManager carManager = new CarManager(new EfCar());
             //CarTest(carManager);
 
             //BrandTest();
@@ -19,11 +19,11 @@ namespace ConsoleUI
 
             UserManager userManager = new UserManager(new EfUser());
 
-            userManager.Add(new User { FirstName = "Cem", LastName = "Gökdel", Email = "1234@gmai.com", Password = "12345" });
+            //userManager.Add(new User { FirstName = "Cem", LastName = "Gökdel", Email = "1234@gmai.com", Password = "12345" });
 
-            userManager.Add(new User { FirstName = "Can", LastName = "Korkmaz", Email = "ck@gmail.com", Password = "12345" });
+            //userManager.Add(new User { FirstName = "Can", LastName = "Korkmaz", Email = "ck@gmail.com", Password = "12345" });
 
-            userManager.Add(new User { FirstName = "Efe", LastName = "Chen", Email = "e.chen@gmail.com", Password = "1234" });
+            //userManager.Add(new User { FirstName = "Efe", LastName = "Chen", Email = "e.chen@gmail.com", Password = "1234" });
 
             var result = userManager.GetAll();
             if(result.Success == true)
@@ -39,7 +39,7 @@ namespace ConsoleUI
         {
             ColorManager colorManager = new ColorManager(new EfColor());
 
-            foreach (var color in colorManager.GetAll())
+            foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine(color.ColorName);
             }
@@ -48,7 +48,7 @@ namespace ConsoleUI
         private static void BrandTest()
         {
             BrandManager brandManager = new BrandManager(new EfBrand());
-            foreach (var brand in brandManager.GetAll())
+            foreach (var brand in brandManager.GetAll().Data)
             {
                 Console.WriteLine(brand.BrandName);
             }

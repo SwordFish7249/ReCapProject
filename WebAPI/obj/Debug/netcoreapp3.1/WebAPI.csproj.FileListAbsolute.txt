@@ -6,6 +6,13 @@ C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.runtimeconfig.dev.json
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.pdb
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -35,6 +42,7 @@ C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
@@ -66,11 +74,3 @@ C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\obj\Debug\netcoreapp3
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Castle.Core.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
-C:\Users\Lansman Computer\source\repos\ReCapProject\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll

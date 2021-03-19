@@ -41,8 +41,8 @@ namespace WebAPI
             //services.AddSingleton<ICarService, CarManager>();
             //services.AddSingleton<ICarDal, EfCar>();
 
-            services.AddCors();
-            
+            services.AddCors(options => options.AddPolicy("AllowOrigin", builder => builder.WithOrigins("http://localhost:4200")));
+
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -72,7 +72,7 @@ namespace WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(builder=>builder.WithOrigins("http://localhost:4201").AllowAnyHeader());
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());//4200 den gelen bütün þeylere izin ver.
 
             app.UseHttpsRedirection();
 
@@ -81,6 +81,8 @@ namespace WebAPI
             app.UseAuthentication();
 
             app.UseAuthorization();
+            app.UseStaticFiles();
+
 
             app.UseEndpoints(endpoints =>
             {
