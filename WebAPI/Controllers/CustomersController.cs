@@ -64,9 +64,9 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
         [HttpGet("getcustomersbyid")]
-        public IActionResult GetCustomersById(int userId)
+        public IActionResult GetCustomersById(int customerId)
         {
-            var result = _customerService.GetCustomersById(userId);
+            var result = _customerService.GetCustomersById(customerId);
             if (result.Success)
             {
                 return Ok(result);

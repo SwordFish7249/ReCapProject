@@ -45,16 +45,16 @@ namespace Business.Concrete
 
         public IDataResult<List<Customer>> GetAll()
         {
-            if (DateTime.Now.Hour == 22)
-            {
-                return new ErrorDataResult<List<Customer>>(Messages.MaintenanceTime);
-            }
+        //    if (DateTime.Now.Hour == 22)
+        //    {
+        //        return new ErrorDataResult<List<Customer>>(Messages.MaintenanceTime);
+        //    }
             return new SuccessDataResult<List<Customer>>(_customerdal.GetAll(), Messages.PersonsListed);
         }
 
-        public IDataResult<List<Customer>> GetCustomersById(int userId)
+        public IDataResult<List<Customer>> GetCustomersById(int customerId)
         {
-            return new SuccessDataResult<List<Customer>>(_customerdal.GetAll(c => c.UserId == userId));
+            return new SuccessDataResult<List<Customer>>(_customerdal.GetAll(c => c.CustomerId == customerId));
         }
 
         public IResult Update(Customer customer)

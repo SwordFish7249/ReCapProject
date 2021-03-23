@@ -55,9 +55,12 @@ namespace Business.Constants
         public static string CarImageNotFound = "Değiştirilmek istenen resim bulunamadı.";
 
 
-        internal static string CarDeleted;
-        internal static string CarUpdated;
-        internal static CarDetailAndImagesDto GetErrorCarMessage;
-        internal static string GetSuccessCarMessage;
+        public static string CarDeleted = "The car was deleted";
+        public static string CarUpdated = "The car was updated";
+        public static string GetErrorCarMessage ="Car detail error";
+        public static string GetSuccessCarMessage = "Car was success";
+
+        public static string InsufficientBalance = "Yetersiz Bakiye";
+        public static string PaymentCompleted = "Ödeme yapıldı";
     }
 }

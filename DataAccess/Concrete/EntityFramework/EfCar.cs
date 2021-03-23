@@ -32,7 +32,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  CarEngine = p.CarEngine,
                                  CarType = p.CarType,
                                  CarModel = p.CarModel,
-                                 Id = p.Id
+                                 Id = p.Id,
+                                 Status = !context.Rentals.Any(p=>p.CarId == carId && p.ReturnDate == null)
                              };
                 return result.SingleOrDefault();
             }
